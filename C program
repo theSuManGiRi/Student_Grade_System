@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+// Function to calculate grade based on average
+char calculateGrade(float average) {
+    if (average >= 90) return 'A';
+    else if (average >= 80) return 'B';
+    else if (average >= 70) return 'C';
+    else if (average >= 60) return 'D';
+    else return 'F';
+}
+
+int main() {
+    char name[50];
+    float physics, chemistry, computer_science, total, average;
+    char grade;
+
+    // Input student name
+    printf("Enter student name:\n ");
+    scanf("%[^\n]s", name); // %[^\n]s allows space in input
+
+    // Input marks for Physics, Chemistry, Computer Science
+    printf("Enter marks for Physics:\n ");
+    scanf("%f", &physics);
+    printf("Enter marks for Chemistry:\n ");
+    scanf("%f", &chemistry);
+    printf("Enter marks for Computer Science:\n ");
+    scanf("%f", &computer_science);
+
+    // Calculate total and average
+    total = physics + chemistry + computer_science;
+    average = total / 3;
+
+    // Calculate grade based on average
+    grade = calculateGrade(average);
+
+    // Display result
+    printf("\n----- Science Faculty Student Report -----\n");
+    printf("Name     : %s\n", name);
+    printf("Total    : %.2f\n", total);
+    printf("Average  : %.2f\n", average);
+    printf("Grade    : %c\n", grade);
+
+    return 0;
+}
