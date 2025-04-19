@@ -1,6 +1,6 @@
 # Student Science Grade Calculation Program
 
-This is a C program designed to calculate the grade of a student based on their marks in Physics, Chemistry, and Biology. The program takes input for the student's name and their marks, calculates the total and average, and then assigns a grade based on the average.
+This is a C program designed to calculate the grade of a student based on their marks in Physics, Chemistry, and Computer Science. The program takes input for the student's name and their marks, calculates the total and average, and then assigns a grade based on the average.
 
 ## Features
 
